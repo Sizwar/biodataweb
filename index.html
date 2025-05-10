@@ -34,15 +34,8 @@
                 <li><a href="/layanan/">Layanan</a></li>
                 <li><a href="/kontak/">Kontak</a></li>
                 <li><a href="/biodata/">Biodata</a></li>
-              <script>
-       fetch('http://localhost:3000/api/biodata')
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById('biodata-list');
-        data.forEach(bio => {
-          container.innerHTML += `<h2>${bio.nama}</h2><p>${bio.deskripsi}</p>`;
-        });
-      })}
+          
+            </body>   
             </html>
                 <li><a href="/tentang/">Tentang Kami</a></li>
             </ul>
